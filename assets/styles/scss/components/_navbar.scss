@@ -1,0 +1,163 @@
+@import '../layout/navigation';
+
+.nav-bar{
+    margin:0 auto;
+    padding:0 22px;
+    max-width: 980px;
+    position:relative;
+    z-index: 2;
+    .nav-list{
+        // z-index: 99;
+        color:#9f9f9f;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height:44px;
+        width:100%;
+        font-size: 17px;
+        backdrop-filter: blur(6px);
+    }
+    .list-item{
+        list-style: none;
+        box-sizing: border-box;
+        display:inline-block;
+        position:relative;
+        z-index: 1;
+        vertical-align: top;
+        cursor: pointer;
+        i{
+            font-size: 20px;
+        }
+    }
+    .nav-link{
+        font-size:14px;
+        line-height:3.14286;
+        font-weight:400;
+        letter-spacing: -.01em;
+        font-family:sans-serif;
+        color:#f5f5f7;
+        position:relative;
+        z-index:1;
+        display:inline-block;
+        padding:0 10px;
+        height:44;
+        opacity:.8;
+        white-space:nowrap;
+        text-decoration:none;
+        outline-offset:-7px;  
+    }
+    .nav-link-apple{
+        background-size:16px 44px;
+        display: block;
+        background: url('/iphone12-pro/assets/img/apple_logo.svg') no-repeat center center;
+        width: 40px;
+        height:40px;
+    }
+    .nav-link-text{
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+        -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+        clip-path: inset(0px 0px 99.9% 99.9%);
+        overflow: hidden;
+        height: 1px;
+        width: 1px;
+        padding: 0;
+        border: 0;
+        top: 50%;
+    }
+
+}
+.nav-product-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 auto;
+    padding:0 22px;
+    max-width: 980px;
+    position:relative;
+    z-index: 2;
+    .title{
+        display:block;
+        margin:14px 0 -14px;
+        padding:0;
+        height:52px;
+        white-space:no-wrap;
+        cursor:default;
+        font-weight:600;
+        font-size:21px;
+        letter-spacing:00.11em;
+        a{
+            text-decoration: none;
+            color:#fff;
+            opacity:.92;
+            letter-spacing:inherit;
+        }
+    }
+    .menu{
+       width:250px;
+       font-size: 12px;
+       line-height: 1;
+       font-weight:400;
+       letter-spacing: -.01em;
+       margin-top:-3px;
+    }
+    .menu-link{
+        display: flex;
+        flex-direction: row;        
+        justify-content:flex-end;
+        align-items: center;
+        height:44px;
+        font-size:1em;
+        margin:0 -10px;
+    }
+    .menu-item{
+        text-decoration: none;
+        list-style: none;
+        font-weight: 400;
+        color: #9f9f9f;
+        margin-left:24px;
+        .menu-item-link{
+            opacity:.56;
+            display: inline-block;
+            line-height: 22px;
+            white-space: nowrap;
+            text-decoration: none;
+            opacity:.92;
+            letter-spacing:inherit;
+        }
+        a{
+            color:#fff;
+            font-weight: inherit;
+        }
+    }  
+    .buy-button{
+        cursor: pointer;
+        display:inline-block;
+        text-align: center;
+        background:#0071e3;
+        color:#fff;
+        white-space: nowrap;
+        font-size: 12px;
+        line-height: 1.33337;
+        font-weight: 400;
+        letter-spacing: -.01em;
+        min-width: 23px;
+        padding:4px 11px;
+        border-radius: 12px;
+
+        .action-buy-button{
+            position: absolute;
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(0px 0px 99.9% 99.9%);
+            overflow: hidden;
+            height: 1px;
+            width: 1px;
+            padding: 0;
+            border: 0;
+            top: auto;
+            left: auto;
+        }
+    }
+    
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/styles/css/main.css" />
+    <title>iPhone 12 Pro</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <nav class="nav-wrapper">
+        <div class="nav-bar">
+          <ul class="nav-list">
+            <li class="list-item" id="apple-logo">
+              <a class="nav-link-apple" id="nav-link-apple">
+                <span class="nav-link-text">Apple</span>
+              </a>
+            </li>
+            <li class="list-item">Store</li>
+            <li class="list-item">Mac</li>
+            <li class="list-item">iPad</li>
+            <li class="list-item">iPhone</li>
+            <li class="list-item">Watch</li>
+            <li class="list-item">TV</li>
+            <li class="list-item">Music</li>
+            <li class="list-item">Support</li>
+            <li class="list-item">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </li>
+            <li class="list-item">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="nav-product-wrapper">
+        <div class="nav-product-bar">
+          <div class="title">
+            <a href=""> iPhone 12 Pro </a>
+          </div>
+          <div class="menu">
+            <ul class="menu-link">
+              <li class="menu-item">
+                <span class="menu-item-link" role="link" aria-current="page"
+                  >Overview</span
+                >
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-item-link" data-analytics-title="specs"
+                  >Tech Specs</a
+                >
+              </li>
+              <li class="menu-item">
+                <a class="buy-button" href=""
+                  >Buy
+                  <span class="action-buy-button"
+                    >iPhone&nbsp;12&nbsp;Pro</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="iphone12-pro">
+        <div class="iphone12-pro-container" id="show">
+          <div class="iphone12-text">
+            <h1 class="iphone12-text">
+              iPhone&nbsp;12&nbsp;Pro and iPhone&nbsp;12&nbsp;Pro&nbsp;Max
+            </h1>
+            <h2 class="iphone12-headline">It’s a leap year.</h2>
+          </div>
+        </div>
+        <div class="video-wrapper">
+          <div class="video-container">
+            <!-- <figure class="image-startframe"></figure>
+            <figure class="image-endframe"></figure> -->
+            <video
+              autoplay
+              class="video"
+              id="iphone-video"
+              muted=""
+              src="./assets/videos/mobile1.mp4"
+            ></video>
+          </div>
+        </div>
+        <div class="video-detail" id="video-detail" style="opacity: 1">
+          <p class="intro">
+            5G goes Pro. A14&nbsp;Bionic rockets past every other smartphone
+            chip. The Pro camera system takes low-light photography to the next
+            level — with an even bigger jump on
+            iPhone&nbsp;12&nbsp;Pro&nbsp;Max. And Ceramic Shield delivers
+            four&nbsp;times better drop performance. Let’s see what this thing
+            can do.
+          </p>
+          <p class="intro-price intro-copy">
+            <span class="sosumi-link-follows">From S$1,649</span>
+          </p>
+          <ul class="watch-link intro-copy small-stacked film-copy">
+            <li>
+              <a
+                href=""
+                aria-label="Watch the iPhone 12 Pro film"
+                id="film-iphone-12-pro"
+                class="icon-wrapper"
+                role="button"
+                ><span class="icon-copy">Watch the film</span
+                ><span class="icon icon-after icon-playcircle"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", (e) => {
+        var video = document.getElementById("iphone-video");
+        var showText = document.getElementById("show");
+        video.addEventListener("ended", (e) => {
+          console.log("@kg event", e);
+          showText.style.visibility = "visible";
+          showText.style.opacity = 1;
+        });
+      });
+
+      const checkpoint = 300;
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+        console.log(currentScroll);
+        if (currentScroll >= checkpoint) {
+          opacity = 1 - checkpoint / currentScroll;
+          //console.log(opacity);
+        } else {
+          opacity = 0;
+        }
+        document.querySelector(".video-detail").style.opacity = opacity + 0.1;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.nav-wrapper{
+    display: block;
+    z-index: 999;
+    min-width:1024px;
+    color:#fff;
+}
+.nav-product-wrapper{
+    position:sticky;
+    top:0;
+    left:0;
+    min-width:1024px;
+    z-index: 9997;
+    height:52px;
+    background:rgba(0,0,0,0.8);
+}

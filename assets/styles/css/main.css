@@ -1,0 +1,312 @@
+.nav-wrapper {
+  display: block;
+  z-index: 999;
+  min-width: 1024px;
+  color: #fff;
+}
+
+.nav-product-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  min-width: 1024px;
+  z-index: 9997;
+  height: 52px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-wrapper {
+  display: block;
+  z-index: 999;
+  min-width: 1024px;
+  color: #fff;
+}
+
+.nav-product-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  min-width: 1024px;
+  z-index: 9997;
+  height: 52px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-bar {
+  margin: 0 auto;
+  padding: 0 22px;
+  max-width: 980px;
+  position: relative;
+  z-index: 2;
+}
+.nav-bar .nav-list {
+  color: #9f9f9f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  width: 100%;
+  font-size: 17px;
+  backdrop-filter: blur(6px);
+}
+.nav-bar .list-item {
+  list-style: none;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  vertical-align: top;
+  cursor: pointer;
+}
+.nav-bar .list-item i {
+  font-size: 20px;
+}
+.nav-bar .nav-link {
+  font-size: 14px;
+  line-height: 3.14286;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: sans-serif;
+  color: #f5f5f7;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 10px;
+  height: 44;
+  opacity: 0.8;
+  white-space: nowrap;
+  text-decoration: none;
+  outline-offset: -7px;
+}
+.nav-bar .nav-link-apple {
+  background-size: 16px 44px;
+  display: block;
+  background: url("/iphone12-pro/assets/img/apple_logo.svg") no-repeat center center;
+  width: 40px;
+  height: 40px;
+}
+.nav-bar .nav-link-text {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+  top: 50%;
+}
+
+.nav-product-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 22px;
+  max-width: 980px;
+  position: relative;
+  z-index: 2;
+}
+.nav-product-bar .title {
+  display: block;
+  margin: 14px 0 -14px;
+  padding: 0;
+  height: 52px;
+  white-space: no-wrap;
+  cursor: default;
+  font-weight: 600;
+  font-size: 21px;
+  letter-spacing: 0.11em;
+}
+.nav-product-bar .title a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.92;
+  letter-spacing: inherit;
+}
+.nav-product-bar .menu {
+  width: 250px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-top: -3px;
+}
+.nav-product-bar .menu-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 44px;
+  font-size: 1em;
+  margin: 0 -10px;
+}
+.nav-product-bar .menu-item {
+  text-decoration: none;
+  list-style: none;
+  font-weight: 400;
+  color: #9f9f9f;
+  margin-left: 24px;
+}
+.nav-product-bar .menu-item .menu-item-link {
+  opacity: 0.56;
+  display: inline-block;
+  line-height: 22px;
+  white-space: nowrap;
+  text-decoration: none;
+  opacity: 0.92;
+  letter-spacing: inherit;
+}
+.nav-product-bar .menu-item a {
+  color: #fff;
+  font-weight: inherit;
+}
+.nav-product-bar .buy-button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  background: #0071e3;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  min-width: 23px;
+  padding: 4px 11px;
+  border-radius: 12px;
+}
+.nav-product-bar .buy-button .action-buy-button {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+  top: auto;
+  left: auto;
+}
+
+.video-wrapper {
+  margin: 0 auto;
+  max-width: 980px;
+}
+.video-wrapper .video-container {
+  position: relative;
+  top: 250px;
+  left: 24px;
+  width: 1352px;
+  transform: matrix(1, 0, 0, 1, 0, -64.3332);
+  will-change: transform;
+  transition: opacity 1s ease-in;
+  opacity: 1;
+  overflow: hidden;
+}
+.video-wrapper .video {
+  width: 100%;
+}
+.video-wrapper .image-startframe {
+  opacity: 0;
+}
+.video-wrapper .image-endframe {
+  opacity: 1;
+}
+
+.sub-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.main-container {
+  width: 100%;
+  background-color: #000;
+}
+
+body {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr, button {
+  margin: 0;
+  padding: 0;
+}
+
+.iphone12-pro {
+  margin: auto;
+  width: 980px;
+}
+.iphone12-pro .iphone12-pro-container {
+  visibility: hidden;
+  transition: all 0.5s linear;
+  opacity: 0;
+  z-index: 999;
+  position: absolute;
+  padding: 72px 0;
+  color: #fff;
+  margin-top: 40px;
+  width: inherit;
+  align-items: center;
+}
+.iphone12-pro .iphone12-pro-container .iphone12-text {
+  font-size: 21px;
+  line-height: 1.19048;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+  text-align: center;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.iphone12-pro .iphone12-pro-container .iphone12-headline {
+  font-size: 80px;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+.iphone12-pro .video-detail {
+  position: relative;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 66.67%;
+}
+.iphone12-pro .video-detail .intro {
+  color: #a1a1a6;
+  align-items: center;
+  font-size: 24px;
+  letter-spacing: 0.009em;
+  line-height: 1.16667;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.iphone12-pro .video-detail .intro-price {
+  color: #a1a1a6;
+  text-align: center;
+  margin-top: 50px;
+}
+.iphone12-pro .video-detail .intro-copy {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+  line-height: 1.19048;
+}
+.iphone12-pro .video-detail .watch-link {
+  list-style: none;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */

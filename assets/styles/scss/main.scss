@@ -1,0 +1,97 @@
+@use './layout/navigation';
+@use './components/navbar';
+@use './components/video';
+@use './layout/body';
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.main-container{
+    width:100%;
+    background-color:#000;
+}
+body{
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr, button {
+    margin: 0;
+    padding: 0;
+}
+
+.iphone12-pro{
+    margin:auto;
+    width: 980px;
+    
+    .iphone12-pro-container{
+        visibility: hidden;
+        transition: all 0.5s linear;
+        opacity: 0;
+        z-index: 999;
+        position: absolute;
+        padding:72px 0 ;
+        color:#fff;
+        margin-top:40px;
+        width:inherit;
+        align-items: center;
+        .iphone12-text{
+            font-size: 21px;
+            line-height: 1.19048;
+            font-weight: 600;
+            letter-spacing: .011em;
+            text-align: center;
+            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        }
+        .iphone12-headline{
+            font-size: 80px;
+            line-height: 1.05;
+            font-weight: 600;
+            letter-spacing: -.015em;
+        }
+
+    }
+    .video-detail{
+        position:relative;
+        margin-top:200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 66.67%;
+        .intro{
+            color:#a1a1a6;
+            align-items: center;
+            font-size: 24px;
+            // font-weight: 600;
+            letter-spacing: .009em;
+            line-height: 1.16667;
+            margin-left: auto;
+            margin-right: auto; 
+            text-align: center;
+        }
+        .intro-price{
+            color: #a1a1a6;
+            text-align: center;
+            margin-top:50px;
+
+        }
+        .intro-copy{
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: .011em;
+            line-height: 1.19048;
+        }
+        .watch-link {
+            list-style: none;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto; 
+            margin-top:50px;
+        }
+
+    }
+
+
+}
+

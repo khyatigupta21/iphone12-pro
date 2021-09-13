@@ -1,0 +1,25 @@
+.video-wrapper{
+    margin:0 auto;
+    max-width: 980px;
+    .video-container{
+        position: relative;
+        top:250px;
+        left: 24px;
+        width: 1352px;
+        transform: matrix(1,0,0,1,0,-64.3332);
+        will-change: transform;
+        transition: opacity 1s ease-in;
+        opacity: 1; 
+        overflow: hidden;        
+    }
+    .video{
+         width:100%;
+    }
+     .image-startframe{
+        opacity: 0;
+     }
+     .image-endframe{
+        opacity: 1;
+     }
+
+}
