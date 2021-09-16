@@ -1,6 +1,7 @@
 .video-wrapper{
     margin:0 auto;
     max-width: 980px;
+    box-sizing: border-box;
     .video-container{
         position: relative;
         top:250px;

@@ -18,30 +18,145 @@
     <div class="main-container">
       <nav class="nav-wrapper">
         <div class="nav-bar">
-          <ul class="nav-list">
+          <ul class="nav-list" id="nav-list">
             <li class="list-item" id="apple-logo">
-              <a class="nav-link-apple" id="nav-link-apple">
+              <a href="./index.html" class="nav-link-apple" id="nav-link-apple">
                 <span class="nav-link-text">Apple</span>
               </a>
             </li>
-            <li class="list-item">Store</li>
-            <li class="list-item">Mac</li>
-            <li class="list-item">iPad</li>
-            <li class="list-item">iPhone</li>
-            <li class="list-item">Watch</li>
-            <li class="list-item">TV</li>
-            <li class="list-item">Music</li>
-            <li class="list-item">Support</li>
-            <li class="list-item">
+            <li class="list-item" id="store-item">
+              Store
+              <ul class="list-categories" id="store-categories">
+                <li>
+                  <a href=""><img src="assets/img/iphone_logo.png" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/mac_logo.png" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/ipad_logo.png" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/watch_logo.png" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/airpod_logo.png" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/airtag_logo.png" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/appletv_logo.png" /></a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item" id="mac-item">
+              Mac
+              <ul class="list-categories">
+                <li>
+                  <a href=""><img src="assets/img/macbookair.svg" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/macbook_pro_13.svg" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/macbook_pro_16.svg" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/imac_24.svg" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/mac_pro.svg" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/mac_mini.svg" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/mac_compare.svg" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/mac_pro_display.svg" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/mac_accessories.svg" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="assets/img/mac_os.svg" /></a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item" id="ipad-item">iPad</li>
+            <li class="list-item" id="iphone-item">iPhone</li>
+            <li class="list-item" id="watch-item">Watch</li>
+            <li class="list-item" id="tv-item">TV</li>
+            <li class="list-item" id="music-item">Music</li>
+            <li class="list-item" id="support-item">Support</li>
+            <li class="list-item" id="search-btn">
               <i class="fa fa-search" aria-hidden="true"></i>
             </li>
             <li class="list-item">
-              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+              <img class="bag-icon" id="bag" src="assets/img/bagicon.svg" />
+              <!-- <i class="fa fa-shopping-bag" aria-hidden="true"></i> -->
+              <div class="arrow-up" id="arrow-up">
+                <aside class="bag-container" id="bag-container">
+                  <div class="bag-content" id="bag-content">
+                    <p class="bag-message">Your Bag is empty.</p>
+                    <ul class="bag-nav-list">
+                      <li class="bag-nav-item">
+                        <img class="img-bag" src="assets/img/bag.svg" />
+                        <a href=""> Bag </a>
+                      </li>
+                      <li class="bag-nav-item">
+                        <img class="img-bag" src="assets/img/favorites.svg" />
+                        <a href="" class=""> Favourites </a>
+                      </li>
+                      <li class="bag-nav-item">
+                        <img class="img-bag" src="assets/img/orders.svg" />
+                        <a href="" class=""> Orders </a>
+                      </li>
+                      <li class="bag-nav-item">
+                        <img class="img-bag" src="assets/img/account.svg" />
+                        <a href="" class=""> Account </a>
+                      </li>
+                      <li class="bag-nav-item">
+                        <img class="img-bag" src="assets/img/signIn.svg" />
+                        <a href="" class=""> Sign in </a>
+                      </li>
+                    </ul>
+                  </div>
+                </aside>
+              </div>
             </li>
           </ul>
+          <div class="search-wrapper">
+            <div class="search-container">
+              <div class="searchtext">
+                <div class="search-icon">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <div class="search-input">
+                  <input type="search" placeholder="Search apple.com" />
+                </div>
+              </div>
+              <div class="close-wrapper">
+                <div id="close-btn">X</div>
+              </div>
+            </div>
+            <div class="quick-links">
+              <div class="quick-links-items">
+                <h3>QUICK LINKS</h3>
+                <a href="/">Visiting an Apple Store FAQ</a>
+                <a href="/">Shop Apple Store Online</a>
+                <a href="/">Accessories</a>
+                <a href="/">AirPods</a>
+                <a href="/">AirTag</a>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
-      <nav class="nav-product-wrapper">
+
+      <nav class="nav-product-wrapper" id="hide">
         <div class="nav-product-bar">
           <div class="title">
             <a href=""> iPhone 12 Pro </a>
@@ -104,23 +219,293 @@
           <p class="intro-price intro-copy">
             <span class="sosumi-link-follows">From S$1,649</span>
           </p>
-          <ul class="watch-link intro-copy small-stacked film-copy">
-            <li>
-              <a
-                href=""
-                aria-label="Watch the iPhone 12 Pro film"
-                id="film-iphone-12-pro"
-                class="icon-wrapper"
-                role="button"
-                ><span class="icon-copy">Watch the film</span
-                ><span class="icon icon-after icon-playcircle"></span
-              ></a>
-            </li>
-          </ul>
+          <div class="watch-link-wrapper">
+            <a href="#" id="watch-link"> Watch the film </a>
+          </div>
         </div>
       </section>
+      <footer class="footer-wrapper">
+        <div class="footer-content">
+          <nav class="nav-footer">
+            <div class="footer-column-section">
+              <h3>Shop and Learn</h3>
+              <ul class="column-section-list">
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Mac</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">iPad</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">iPhone</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Watch</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">TV</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Music</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">AirPods</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">iPod touch</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">AirTag</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Accessories</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Gift Cards</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column-section">
+              <h3>Services</h3>
+              <ul class="column-section-list">
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Apple Music</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Apple TV+</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Apple Arcade</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">iCloud</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Apple One</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Apple Pay</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Apple Books</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Apple Podcasts</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">App Store</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Accessories</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Gift Cards</a>
+                </li>
+              </ul>
+              <div class="footer-column-section">
+                <h3>Account</h3>
+                <ul class="column-section-list">
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#"
+                      >Manage your Apple ID</a
+                    >
+                  </li>
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#"
+                      >Apple Store Account</a
+                    >
+                  </li>
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#">iCloude.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-column-section">
+              <h3>Apple Store</h3>
+              <ul class="column-section-list">
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Find a Store</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Shop Online</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Genius Bar</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Today at Apple</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Apple Camp</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Apple Store App</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#"
+                    >Refurbished and Clearance</a
+                  >
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Financing</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Apple Trade In</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Order Status</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Shopping Help</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column-section">
+              <h3>For Business</h3>
+              <ul class="column-section-list">
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Apple and Business</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Shop for Business</a>
+                </li>
+              </ul>
+              <div class="footer-column-section">
+                <h3>For Education</h3>
+                <ul class="column-section-list">
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#"
+                      >Apple and Education</a
+                    >
+                  </li>
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#"
+                      >Shop for University</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-column-section">
+                <h3>For Healthcare</h3>
+                <ul class="column-section-list">
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#"
+                      >Apple in Healthcare</a
+                    >
+                  </li>
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#"
+                      >Health on Apple Watch</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-column-section">
+              <h3>Apple Values</h3>
+              <ul class="column-section-list">
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Accessibility</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Environment</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#">Privacy</a>
+                </li>
+                <li class="column-section-item">
+                  <a class="column-section-link" href="#"
+                    >Supplier Responsibility</a
+                  >
+                </li>
+              </ul>
+              <div class="footer-column-section">
+                <h3>About Apple</h3>
+                <ul class="column-section-list">
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#">Newsroom</a>
+                  </li>
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#">Apple Leadership</a>
+                  </li>
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#"
+                      >Career Opportunities</a
+                    >
+                  </li>
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#">Investors</a>
+                  </li>
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#"
+                      >Ethics and Compliance</a
+                    >
+                  </li>
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#">Events</a>
+                  </li>
+                  <li class="column-section-item">
+                    <a class="column-section-link" href="#">Contact Apple</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <section class="nav-footer-lower">
+            <div class="footer-shop">
+              More ways to shop:
+              <a href="#">Find an Apple Store</a>
+              or
+              <a href="#">a retailer</a>
+              near you. <span class="nowrap">Or call 1800‐692‐7753.</span>
+            </div>
+            <div class="footer-locale">
+              <a class="footer-locale-link" href="">Singapore</a>
+            </div>
+            <div class="footer-legal">
+              <div class="footer-legal-copyright">
+                Copyright © 2021 Apple Inc. All rights reserved.
+              </div>
+              <div class="footer-legal-links">
+                <a class="footer-legal-link" href="#">Privacy Policy</a>
+                <a class="footer-legal-link" href="">Terms of Use</a>
+                <a class="footer-legal-link" href="#">Sales and Refunds</a>
+                <a class="footer-legal-link" href="#">Legal</a>
+                <a class="footer-legal-link" href="#">Site Map</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </footer>
     </div>
+    <!-- <section class="iphone12-pro">
+        
+    
+        
+        <div
+          class="subsection-content"/4NMY5 0[ ERPIY E0RY_{=5I/
+          data-anim-keyframe-1='{"start": "a0t+50a0h-50vh", "end": "a0b-50a0h", "opacity": [1, 0], "anchors":[".image-design-compare"], "breakpointMask": "MLX", "disabledWhen": ["no-enhance-base-xp"]}'
+          data-anim-keyframe-2='{"start": "b-50vh", "end": "b", "opacity": [1, 0], "breakpointMask": "S", "disabledWhen": ["no-enhance-base-xp"]}'
+          style="opacity: 0.535714"
+        >
+          <video
+            autoplay
+            id="video-design-compare"
+            data-inline-media=""
+            data-inline-media-plugins="AnimLoad, AnimPlay, ViewportSource"
+            data-inline-media-basepath="/105/media/us/iphone-12-pro/2020/e70ffbd8-50f1-40f3-ac36-0f03a15ac314/anim/compare/"
+            muted=""
+            preload="none"
+            aria-hidden="true"
+            playsinline=""
+            src="assets/videos/iphone12-promax.mp4"
+          ></video>
+        </div>
+      </section> -->
     <script>
+      /* Script for showing above text of video*/
+
       document.addEventListener("DOMContentLoaded", (e) => {
         var video = document.getElementById("iphone-video");
         var showText = document.getElementById("show");
@@ -131,6 +516,7 @@
         });
       });
 
+      /* Script for showing text below video*/
       const checkpoint = 300;
 
       window.addEventListener("scroll", () => {
@@ -143,6 +529,57 @@
           opacity = 0;
         }
         document.querySelector(".video-detail").style.opacity = opacity + 0.1;
+      });
+
+      /*document
+        .getElementsByClassName(".list-item")
+        .addEventListener("mouseover", mouseOver);
+      document
+        .getElementsByClassName(".list-item")
+        .addEventListener("mouseout", mouseOut);
+
+      function mouseOver() {
+        document.querySelector(".nav-product-wrapper").style.opacity = 0;
+      }
+
+      function mouseOut() {
+        document.querySelector(".nav-product-wrapper").style.opacity = 1;
+      }*/
+
+      /* Bag script*/
+      var status = document.getElementById("bag-container");
+      var arrow = document.getElementById("arrow-up");
+      let bag = document.getElementById("bag");
+      bag.addEventListener("click", showBag());
+      console.log(bag);
+      function showBag() {
+        var status = document.getElementById("bag-container");
+        var arrow = document.getElementById("arrow-up");
+        console.log("clicked");
+        if (status.style.visibility == "hidden") {
+          status.style.visibility = "visible";
+          arrow.style.visibility = "visible";
+        } else {
+          status.style.visibility = "hidden";
+          arrow.style.visibility = "hidden";
+        }
+      }
+
+      let searchBtn = document.getElementById("search-btn");
+      let closeBtn = document.getElementById("close-btn");
+      searchBtn.addEventListener("click", (e) => {
+        var searchWrapper = document.querySelector(".search-wrapper");
+        var navBar = document.getElementById("nav-list");
+        searchWrapper.style.display = "block";
+        navBar.style.display = "none";
+      });
+
+      closeBtn.addEventListener("click", (e) => {
+        e.preventDefault(e);
+        var searchWrapper = document.querySelector(".search-wrapper");
+        let navBar = document.getElementById("nav-list");
+        searchWrapper.style.display = "none";
+        navBar.style.display = "flex";
       });
     </script>
   </body>

@@ -1,0 +1,51 @@
+.bag-container{
+    visibility: hidden;
+    position: absolute;
+    font-size: 14px;
+    line-height: 1.28577;
+    font-weight: 400;
+    letter-spacing: -.014em;
+    background: #fff;
+    border: 1px solid #d2d2d7;
+    border-radius: 18px;
+    margin-top:6px;
+    width: 286px;
+    right:-148px;
+   
+    .bag-content{
+        padding:0 20px;
+        z-index: 9999;
+        margin-bottom:10px;
+        .bag-message{
+            color:#6e6e73;
+            padding:35px 0 23px;
+            margin:0;
+            text-align: center;
+            letter-spacing: -0.016em;
+        }
+        .bag-nav-list{
+            background-color: #fff;
+            padding:0;
+            margin:12px 0 0;
+            list-style:none;
+            align-items: center;
+            .bag-nav-item{
+                align-items: center;
+                display: flex;
+                margin: 0;
+                line-height: 44px;
+                border-top: 1px solid   #d2d2d7;
+                a{
+                    text-decoration: none;
+                    color:#06c;
+                }
+                .img-bag{
+                    align-items: center;
+                    height:23px;
+                    width:23px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
