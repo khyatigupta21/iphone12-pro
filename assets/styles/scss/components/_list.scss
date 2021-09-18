@@ -38,6 +38,10 @@
                 a{
                     text-decoration: none;
                     color:#06c;
+                    z-index: 9999;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
                 .img-bag{
                     align-items: center;

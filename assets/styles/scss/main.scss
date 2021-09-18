@@ -18,6 +18,8 @@
 }
 body{
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr, button {
     margin: 0;
@@ -85,7 +87,7 @@ ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, f
             line-height: 1.19048;
         }
         .watch-link-wrapper{
-            margin-top:50px;
+            margin-bottom:20%;
             margin-left:40%;
             a{
                 margin:0 auto;

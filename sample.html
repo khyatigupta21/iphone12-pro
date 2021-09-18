@@ -24,9 +24,9 @@
                 <span class="nav-link-text">Apple</span>
               </a>
             </li>
-            <li class="list-item" id="store-item" onclick="showStore()">
+            <li class="list-item" id="store-item">
               Store
-              <!-- <ul class="list-categories" id="store-categories">
+              <ul class="list-categories" id="store-categories">
                 <li>
                   <a href=""><img src="assets/img/iphone_logo.png" /></a>
                 </li>
@@ -48,11 +48,11 @@
                 <li>
                   <a href=""><img src="assets/img/appletv_logo.png" /></a>
                 </li>
-              </ul> -->
+              </ul>
             </li>
-            <li class="list-item" id="mac-item" onclick="showMac()">
+            <li class="list-item" id="mac-item">
               Mac
-              <!-- <ul class="list-categories">
+              <ul class="list-categories">
                 <li>
                   <a href=""><img src="assets/img/macbookair.svg" /></a>
                 </li>
@@ -83,7 +83,7 @@
                 <li>
                   <a href=""><img src="assets/img/mac_os.svg" /></a>
                 </li>
-              </ul> -->
+              </ul>
             </li>
             <li class="list-item" id="ipad-item">iPad</li>
             <li class="list-item" id="iphone-item">iPhone</li>
@@ -161,90 +161,6 @@
         </div>
       </nav>
 
-      <section class="hover-wrapper store">
-        <div class="hover-items store">
-          <div class="items">
-            <img class="img-hover" src="./assets/img/mac_logo.png" alt="Mac" />
-            <span>Mac</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/iphone_logo.png" alt="iPhone" />
-            <span>iPhone</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/ipad_logo.png" alt="iPad" />
-            <span>iPad</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/watch_logo.png" alt="Apple Watch" />
-            <span>Apple Watch</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/airpod_logo.png" alt="AirPods" />
-            <span>AirPods</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/airtag_logo.png" alt="AirTag" />
-            <span>AirTag</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/appletv_logo.png" alt="AppleTV" />
-            <span>AppleTV</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/mac_accessories.svg" alt="Accessories" />
-            <span>Accessories</span>
-          </div>
-        </div>
-      </section>
-      <section class="hover-wrapper mac">
-        <div class="hover-item mac">
-          <div class="items">
-            <img src="./assets/img/macbookair.svg" alt="" />
-            <span>MacBook Air</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/macbook_pro_13.svg" alt="" />
-            <span>MacBook Pro 13"</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/macbook_pro_16.svg" alt="" />
-            <span>MacBook Pro 16"</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/imac_24.svg" alt="" />
-            <span>iMac 24"</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/imac_27.svg" alt="" />
-            <span>iMac 27"</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/mac_pro.svg" alt="" />
-            <span>Mac Pro</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/mac_mini.svg" alt="" />
-            <span>Mac mini</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/mac_compare.svg" alt="" />
-            <span>Compare</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/mac_pro_display.svg" alt="" />
-            <span>Pro Display XDR</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/mac_accessories.svg" alt="" />
-            <span>Accessories</span>
-          </div>
-          <div class="items">
-            <img src="./assets/img/mac_os.svg" alt="" />
-            <span>Big Sur</span>
-          </div>
-        </div>
-      </section>
       <nav class="nav-product-wrapper" id="hide">
         <div class="nav-product-bar">
           <div class="title">
@@ -643,33 +559,6 @@
         }
         document.querySelector(".video-detail").style.opacity = opacity + 0.1;
       });
-
-      function showStore() {
-        let elementStore = document.querySelector(".store");
-
-        console.log(elementStore);
-        if (
-          !elementStore.style.display ||
-          elementStore.style.display === "none"
-        ) {
-          elementStore.style.display = "flex";
-          elementMac.style.display = "none";
-        } else {
-          elementStore.style.display = "none";
-        }
-      }
-
-      function showMac() {
-        let elementMac = document.querySelector(".mac");
-        console.log(elementMac);
-
-        if (!elementMac.style.display || elementMac.style.display === "none") {
-          elementMac.style.display = "flex";
-          elementStore.style.display = "none";
-        } else {
-          elementMac.style.display = "none";
-        }
-      }
 
       /*document
         .getElementsByClassName(".list-item")
